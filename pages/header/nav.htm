@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://5h9igzqanx.github.io/TRDWBST/CSS/header/nav.css">
+<link rel="stylesheet" href="https://5h9igzqanx.github.io/TRDWBST/CSS/header/boss.css">
+<style>
+    body{
+        background-color: rgba(255,255,255,0.2);
+    }
+</style>
+<div class="nav-bs">
+    <div class="nav-logo"><a onclick="navtz(0)"><img src="https://5h9igzqanx.github.io/TRDWBST/media/picture/LOGO.jpg" alt="logo,你看你妈呢" title="TRDWBST"></a></div><!-- logo,你看你妈呢 -->
+    <div class="nav">
+        <div class="nav-link"><!-- 导航链接 -->
+            <a onclick="navtz(1)">&emsp;专题</a>
+            <a onclick="navtz(2)">&emsp;项目</a>
+            <a onclick="navtz(3)">&emsp;玩</a>
+            <a onclick="navtz(4)">&emsp;工具(在建)</a>
+        </div>
+        <div class="honglvdeng"><!-- 红绿灯 -->
+            <a onclick="navan(0)"><img src="https://5h9igzqanx.github.io/TRDWBST/media/picture/nav/nav-0.png" title="hld"></a>
+            <a onclick="navan(1)"><img src="https://5h9igzqanx.github.io/TRDWBST/media/picture/nav/nav-1.png" title="hld"></a>
+            <a onclick="navan(2)"><img src="https://5h9igzqanx.github.io/TRDWBST/media/picture/nav/nav-2.png" title="hld"></a>
+        </div> 
+    </div>
+</div>
+<script>//勾丝
+    function navtz(a){
+        if(a == 0){
+            top.location.href="https://5h9igzqanx.github.io/TRDWBST/"
+        }else if(a == 1){
+            top.location.href="https://5h9igzqanx.github.io/TRDWBST/pages/pages/special/0/"
+        }else if(a == 2){
+            top.location.href="https://5h9igzqanx.github.io/TRDWBST/pages/pages/project/0/"
+        }else if(a == 3){
+            top.location.href="https://5h9igzqanx.github.io/TRDWBST/pages/pages/fun/0/"
+        }else if(a == 4){
+            alert("正在建造……")
+            alert("敬请期待……")
+            alert("你怎么还不走？")
+            alert("走吧")
+            alert("这里没东西了")
+            alert("你为什么还不走啊？")
+            alert("赶紧走，别在这碍事！")
+            alert("哎哟我的小祖宗哟，算我求你了，走吧")
+            alert("再不走我打你了啊")
+            alert("欸，这才是好孩子")
+            alert("再见啊")
+        }
+    }
+    function navan(a){
+        if(a == 0){
+            alert("（关不掉）")
+        }else if(a == 1){
+            alert("（不会最大化）")
+        }else if(a == 2){
+            alert("（你觉得你很幽默？）")
+            alert("（鬼！）")
+            top.location.href="https://www.baidu.com"
+        }
+    }
+    //操为什么js只支持绝对路径！！！
+</script>
