@@ -13,8 +13,9 @@
         <div class="nav-link"><!-- 导航链接 -->
             <a onclick="navtz(1)">&emsp;专题</a>
             <a onclick="navtz(2)">&emsp;项目</a>
-            <a onclick="navtz(3)">&emsp;玩</a>
-            <a onclick="navtz(4)">&emsp;工具(在建)</a>
+            <a onclick="navtz(3)">&emsp;工具(在建)</a>
+            <a onclick="navtz(4)">&emsp;资源</a>
+            <a onclick="navtz(5)">&emsp;玩(在建)</a>
         </div>
         <div class="honglvdeng"><!-- 红绿灯 -->
             <a onclick="navan(0)"><img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/nav/nav-0.png" title="hld"></a>
@@ -32,19 +33,11 @@
         }else if(a == 2){
             top.location.href="https://5h9igzqanx.github.io/TRDWBST-pages/pages/project/0/"
         }else if(a == 3){
-            top.location.href="https://5h9igzqanx.github.io/TRDWBST-pages/pages/fun/0/"
+            top.location.href="https://5h9igzqanx.github.io/zwpgtools/"
         }else if(a == 4){
-            alert("正在建造……")
-            alert("敬请期待……")
-            alert("你怎么还不走？")
-            alert("走吧")
-            alert("这里没东西了")
-            alert("你为什么还不走啊？")
-            alert("赶紧走，别在这碍事！")
-            alert("哎哟我的小祖宗哟，算我求你了，走吧")
-            alert("再不走我打你了啊")
-            alert("欸，这才是好孩子")
-            alert("再见啊")
+            incomplete()
+        }else if(a == 5){
+            top.location.href="https://5h9igzqanx.github.io/TRDWBST-pages/pages/fun/0/"
         }
     }
     function navan(a){
@@ -57,6 +50,19 @@
             alert("（鬼！）")
             top.location.href="https://www.baidu.com"
         }
+    }
+    function incomplete(){
+        alert("正在建造……")
+        alert("敬请期待……")
+        alert("你怎么还不走？")
+        alert("走吧")
+        alert("这里没东西了")
+        alert("你为什么还不走啊？")
+        alert("赶紧走，别在这碍事！")
+        alert("哎哟我的小祖宗哟，算我求你了，走吧")
+        alert("再不走我打你了啊")
+        alert("欸，这才是好孩子")
+        alert("再见啊")
     }
     //操为什么js只支持绝对路径！！！
 </script>
