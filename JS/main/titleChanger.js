@@ -12,4 +12,3 @@ function changeTitle(){
         }, 1000);
     }
 }
-changeTitle()
