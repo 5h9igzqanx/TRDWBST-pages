@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <title>文章</title><!--  - 额…让子弹再飞一会儿… -->
+        <link rel="shortcut icon" href="https://5h9igzqanx.github.io/TRDWBST-media/picture/LOGO/LOGO-page.gif">
+        <link rel="stylesheet" href="https://5h9igzqanx.github.io/fonts-wbst/font.css">
+        <link rel="stylesheet" href="https://5h9igzqanx.github.io/TRDWBST/CSS/header/boss.css">
+        <script src="articlelist.js">
+        </script>
+    </head>
+    <body bgcolor="cadeea" onload="cc();">
+        <iframe src="https://5h9igzqanx.github.io/TRDWBST-pages/header/nav.htm" title="nav" width="100%" height="64px" frameborder="0" scrolling="no"></iframe>
+        <iframe id="reportFrame" title="reportFrame" style="height: calc(100vh - 72px);width:calc(100% - 2px)" frameborder="0" scrolling="auto" src=""></iframe>
+        <script>
+            function parseQueryString(url) {
+                var result = {};
+                var str = url.split("?")[1];
+                if (str == undefined)
+                    return result;
+                var items = str.split("&")
+                var arr;
+                for (var i = 0; i < items.length; i++) {
+                    arr = items[i].split("=");
+                    result[arr[0]] = arr[1];
+                }
+                return result;
+            };
+            function cc(){
+                var params = parseQueryString(window.location.href);
+                var olderId = Object.values(params);
+                console.log(params);
+                console.log(olderId);
+                document.getElementById("reportFrame").src = "https://5h9igzqanx.github.io/TRDWBST-pages/pages/special/" + olderId + ".pdf";
+            };
+            //https://blog.csdn.net/wujian_csdn_csdn/article/details/108094668
+        </script>
+    </body>
+</html>
